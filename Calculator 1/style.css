@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  margin: 1rem;
+}
+
+.calculator {
+  max-width: 32rem;
+  margin: 1rem auto;
+  background-color: #111;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 6%;
+}
+
+@media (min-width: 40rem) {
+  .calculator {
+    max-width: 35rem;
+  }
+}
+
+.calculator-input {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.calculator-input p {
+  font-size: 1.1rem;
+  color: #ccc;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-input p {
+    font-size: 1.3rem;
+  }
+}
+
+.calculator-results {
+  text-align: right;
+  height: 100px;
+}
+
+.calculator-results h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-results h2 {
+    font-size: 2.3rem;
+  }
+}
+
+.calculator-extra {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-extra {
+    grid-gap: 1.5rem;
+  }
+}
+
+.calculator-extra__item {
+  border-radius: 15px;
+  background: #777;
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+@media (min-width: 40rem) {
+  .calculator-extra__item {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+}
+
+.calculator-extra .clear {
+  background: #d31d1d;
+}
+
+.calculator-extra .delete {
+  background: #dc1e1e;
+  font-weight: normal;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+
+.calculator-button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 0.8rem 1rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-button {
+    grid-gap: 1rem 1.5rem;
+  }
+}
+
+.calculator-button__item {
+  border-radius: 10px;
+  background: #555;
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  .calculator-button__item {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+}
+
+.calculator-button .color {
+  background: #e2501b;
+  font-size: 1.3rem;
+}
+
+.calculator-button .span {
+  grid-column: span 2;
+}
